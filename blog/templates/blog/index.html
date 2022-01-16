@@ -23,11 +23,15 @@
     <section id="latest-posts">
         <h2>My Latest Posts</h2>
         <ul>
-            {% include 'blog/includes/post.html' %}          
+            {% for post in posts %}
+            
+                {% include 'blog/includes/post.html' %}          
+            
+            {% endfor %}
         </ul>
     </section>
 
-    <section id="about">
+    <section id="about" >
         <h2>What I do</h2>
         <p>I love Programming, I love helping others and enjoy discovering new things</p>
         <p>My Goal is to keep on improving as a developer and as a Human</p>

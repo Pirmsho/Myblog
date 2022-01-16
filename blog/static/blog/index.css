@@ -73,3 +73,15 @@
   font-size: 1.5rem;
   color: #353535;
 }
+
+@keyframes wipe-enter {
+  0% {
+    transform: scale(0, 0.025);
+  }
+  50% {
+    transform: scale(1, 0.025);
+  }
+}
+.on-scroll {
+  animation-name: wipe-enter 1s;
+}
